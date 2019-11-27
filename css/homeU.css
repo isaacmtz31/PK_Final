@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+#sideBar{
+  height: 100%;
+
+  background: #F6E3CD;
+  font-size: 30px;
+  font-family:  'Brandon Grotesque', sans-serif;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+#profilePicture{
+  background: transparent;
+}
+
+#profilePicture img{
+  width: 100%;
+  border-radius: 100%;
+  padding: 20px 20px;
+}
+
+#feed-cat img{
+  width: 100%;
+  height: 20vh;
+}
+
+.hash{
+  font-size: 26px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 4px;
+  border-radius: 20px;
+  background-color: #F7776A;
+}
+#PageTitle{
+  font-weight: lighter;
+  font-size: 7vh;
+  font-family: 'Brandon Grotesque', sans-serif;
+  background-color: #6C98BF;
+}
+.aback{
+  background-color: #F6E3CD;
+  border: 0;
+}
+
+.iconos{ /*Color de los iconos del sideBar*/
+  color: #e57373 ;
+}
+
+div a{ /*Color de la letra del sideBar*/
+  color: black;
+}
+
+.barMenu{
+  margin: -7%;
+}
+.barMenu2{
+  margin-top: 10%;
+  margin-bottom: -5%;
+}
+
+#contenido{
+  margin-left: 17%;
+}

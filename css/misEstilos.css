@@ -1,0 +1,398 @@
+main {
+    flex: 1 0 auto;
+}
+
+#head{
+	width: 200px;
+	height: 120px;
+}
+header{
+	font-family: 'brandon-grotesque', sans-serif;
+	width: 100%;
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: .14em;
+	text-transform: uppercase;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+}
+
+header div img{
+	width: 120px;
+	height: 120px;
+}
+
+#menu a{
+	line-height: 2em;
+	text-decoration: none;
+	color: #1d1d1d;
+	margin-right: 40px;
+}
+
+#menu a:hover{
+	color: rgba(29, 29, 20, .4);
+	transition-duration: 0.2s;
+}
+
+.page-footer{
+	background-color: #2E3092;
+}
+
+.footer-bajo{
+	
+	color: #020F59;
+	line-height: 55px;
+	font-family: 'brandon-grotesque', sans-serif;
+	width: 100%;
+	font-size: 14px;
+	letter-spacing: .13em;
+	padding-right: 900px;
+	background-color: white;
+}
+
+.btn:hover {
+	background-color: white;
+}
+
+.btn:focus {
+	background-color:white;
+  }
+
+.crear{
+	color:#D94343;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+  }
+  /**************************************************/
+ #login{
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+	background: url(../imgs/bg.jpeg) no-repeat center top;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+  }
+  
+  .login-box {
+	width: 320px;
+	height: 420px;
+	background: #020F59;
+	top: 55%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -52%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+  }
+
+  #pass{
+	  color:#57E7FF;
+  }
+
+  #correo{
+	  color:#57E7FF;
+  }
+  
+  .login-box .avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	top: -120px;
+	left: calc(56% - 120px);
+  }
+  
+  .login-box h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 24px;
+	color:white;
+  }
+  
+  .login-box label {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	display: block;
+  }
+  
+  .login-box input {
+	width: 100%;
+	margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"], .login-box input[type="password"] {
+	border: none;
+	border-bottom: 1px solid #57E7FF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+  }
+  
+  .login-box input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #57E7FF;
+	color: #000;
+	font-weight: 650;
+	font-size: 18px;
+	border-radius: 20px;
+  }
+  
+  .login-box input[type="submit"]:hover {
+	cursor: pointer;
+	background: #D5F2E7;
+	color: #000;
+  }
+  
+  .login-box a {
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 40px;
+	color: #D5F2E7;
+  }
+  
+  .login-box a:hover {
+	color: #fff;
+  }
+  /*++++++++++++++++++++++++++++*/
+  #correoRecu{
+	color:#57E7FF;
+	}
+  #Recu{
+		display: flex;
+		flex-direction: column;
+		background-color: #0C192E;
+		margin: 0;
+		padding: 0;
+		background-size: cover;
+		font-family: sans-serif;
+		height: 100vh;
+  }
+  .recu-box {
+	width: 1400px;
+	height: 300px;
+	background: #0C192E;
+	top: 55%;
+	left: 49%;
+	position: absolute;
+	transform: translate(-50.21%, -50%);
+	padding: 80px 45px;
+  }
+  
+  .recu-box h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 24px;
+	color:white;
+	width:30%;
+	top: 50%;
+	left: 50%;
+	transform: translate(120%, -70%);
+  }
+  
+  .recu-box label {
+	font-weight: bold;
+	display: block;
+  }
+  
+  .recu-box input {
+	width: 100%;
+	margin-bottom: 20px;
+  }
+  
+  .recu-box input[type="text"] {
+	border: 0;
+	width: 40%;
+	border-bottom: 1px solid #57E7FF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+  }
+
+  .recu-box input[type="text"]:focus{
+	border: 0;
+	width: 40%;
+	border-bottom: 1px solid #57E7FF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	border-bottom: 1px solid #57E7FF !important;
+	box-shadow: 0 1px 0 0 #57E7FF !important;
+  }
+
+  
+  .recu-box input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #57E7FF;
+	color: #000;
+	font-weight: 650;
+	font-size: 18px;
+	border-radius: 20px;
+	width:30%;
+	top: 40%;
+	left: 80%;
+	transform: translate(160%, -150%);
+  }
+  
+  .recu-box input[type="submit"]:hover {
+	cursor: pointer;
+	background: #D5F2E7;
+	color: #000;
+  }
+  
+  .recu-box a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 40px;
+	color: #D5F2E7;
+	top: 45%;
+	left: 8%;
+	position: absolute;
+	transform: translate(-50%, 150%);
+  }
+  
+  .recu-box a:hover {
+	color: #fff;
+  }
+  
+/*********************************************************/
+#crea{
+display: flex;
+	flex-direction: column;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+}
+#nom{
+	color:#57E7FF;
+}
+
+#ape{
+	color:#57E7FF;
+}
+
+#gen{
+	color:#57E7FF;
+}
+
+#em{
+	color:#57E7FF;
+}
+
+#passw{
+	color:#57E7FF;
+}
+
+#generoM[type="checkbox"].filled-in:checked + span:not(.lever):after 
+{
+    border: 2px solid #57E7FF;  
+    background-color: #57E7FF;
+}
+
+#generoH[type="checkbox"].filled-in:checked + span:not(.lever):after 
+{
+    border: 2px solid #57E7FF;  
+    background-color: #57E7FF;
+}
+
+#generoO[type="checkbox"].filled-in:checked + span:not(.lever):after 
+{
+    border: 2px solid #57E7FF;  
+	background-color: #57E7FF;
+}
+
+#formRegistro{
+	background-color: #020F59;
+}
+#formRegistro h4{
+	color:white;
+	text-align: center;
+}
+
+#formRegistro input[type="submit"]:hover {
+	width: 40%;
+	cursor: pointer;
+	background: #D5F2E7;
+	color: black;
+}
+
+#formRegistro input[type="text"], #formRegistro input[type="password"] {
+	border: 0;
+	width: 400px;
+	border-bottom: 1px solid #57E7FF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+#regi{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #57E7FF;
+	color: black;
+	font-weight: 650;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+#lreg{
+	color: #57E7FF;
+}
+
+#foto{
+	background-color: #57E7FF;
+	color:black;
+	font-weight: 600;
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+    background-color: #57E7FF;
+  }
+
+  input[type=range] + .thumb {
+    background-color: #57E7FF;
+  }
+  input[type=range] + .thumb.active .value {
+	font-weight: 600;
+    color: black;
+  }
+
