@@ -29,6 +29,20 @@
                             window.location.replace("./../pages/profile.php");
                           });
                     }
+                    else if(AX.val == 2){
+                      swal({
+                          title: "¡Éxito!",
+                          text: AX.msj,
+                          showCancelButton: false,
+                          confirmButtonColor: "#4BB543",
+                          confirmButtonText: "¡Adelante!",
+                          closeOnConfirm: true,
+                          imageUrl: "./../imgs/postKarteb.png"
+                        },
+                          function(){
+                            window.location.replace("./../ProyectoWeb/public/administrator.php");
+                          });
+                    }
                     else {
                       swal("¡Oh-no!", AX.msj, "error");
                     }

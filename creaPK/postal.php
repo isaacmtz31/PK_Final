@@ -16,9 +16,9 @@
 </head>
 <body>
 	<header>
-		<div><a href="postal.html" href="postal.html"><img src="imagenes/logo.png"></a></div>
+		<div><a href="./../pages/profile.php" href="postal.html"><img src="imagenes/logo.png"></a></div>
 		<div id="menu">
-			<a href="#"><i class="fas fa-user"></i>PERFIL</a>
+			<a href="./../pages/profile.php"><i class="fas fa-user"></i>PERFIL</a>
 		</div>
 	</header>
 	<div id="cabecera">
@@ -32,7 +32,7 @@
 		</div>
         <div id="contenido">
         	<!---A van las postales con PHP y Ajax--->
-        </div>  
+        </div>
 	</div>
 	<div id="pie">
 		<div class="enlace"><a href="#cabecera" id="Amor"><i class="far fa-heart"></i>Amor</a></div>
@@ -107,7 +107,7 @@
 					<img src="" id="new_color" class="actuales">
 				</div>
 				<a href="#miCanvas" class="bt tooltipped" data-position="top" data-tooltip="Subir Imagen" id="sube">
-				<img src="paleta/sube.png">	
+				<img src="paleta/sube.png">
 				 <input type="file" id="camb">
 				</a>
 				<canvas id='miCanvas'></canvas>
@@ -166,6 +166,6 @@
 	<script src="js/ajax.js"></script>
 	<script src="js/eventos.js"></script>
 	<script src="js/canvas1.js"></script>
-	    
+
 </body>
 </html>

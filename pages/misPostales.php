@@ -4,7 +4,7 @@
   {
       include("./usuario_BD.php");
       include("./misPostales_BD.php");
-  }
+    }
   else
       header("location:./logIn.php");
  ?>

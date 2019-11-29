@@ -10,7 +10,7 @@ $test = $_POST['test'];
 $sqlLogin = "call cambiarEstadoPK('$test')";
 $resLogin = mysqli_query($conexion, $sqlLogin);
 $numFilasLogin = mysqli_num_rows($resLogin);
-/*
+
 if($numFilasLogin == 1)
 {
   $infUsuario = mysqli_fetch_row($resLogin);
@@ -30,7 +30,7 @@ if($numFilasLogin == 1)
 }else{
     $respAX["val"] = 0;
     $respAX["msj"] = "<h5 class='center-align'>Error. Favor de intentarlo nuevamente</h5>";
-}*/
+}
 echo ($respAX);
 
 

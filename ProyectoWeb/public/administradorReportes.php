@@ -2,6 +2,14 @@
 $conexion = mysqli_connect("localhost","root","","Postales");
 $conexion->set_charset("utf8");
 ?>
+<?php
+session_start();
+$varCorreo = $_SESSION['email'];
+if(($varCorreo == null || $varCorreo == '')){
+  echo 'Usted no tiene Autorizacion';
+  header("Location:http://localhost/postKarte_v4/pages/logIn.php");
+}
+ ?>
 <html lang="en">
   <head>
     <title>User Information and Form</title>
@@ -123,7 +131,7 @@ $conexion->set_charset("utf8");
     <div class="container">
   		<div class="mx-auto col-xs-12 col-lg-8 main-section" id="myTab" role="tablist">
   			<ul class="nav nav-tabs justify-content-center">
-          <a class="btn bg-warning text-light " href="http://localhost:8080/ProyectoWeb/public/administrator.php" id="Reportes" >Reportes</a>
+          <a class="btn bg-warning text-light " href="http://localhost/postKarte_v4/ProyectoWeb/public/administrator.php" id="Reportes" >Reportes</a>
 
     			<li class="nav-item">
       			<a class="nav-link active text-secondary " id="graficas-tab" data-toggle="tab" href="#graficas" role="tab" aria-controls="graficas" aria-selected="false">Graficas</a>
@@ -132,13 +140,14 @@ $conexion->set_charset("utf8");
       			<a class="nav-link text-secondary" id="estatus-tab" data-toggle="tab" href="#estatus" role="tab" aria-controls="estatus" aria-selected="true">Detalle de Karte's</a>
           </li>
 
-          <a class="btn btn-warning " id="CerrarSesion" >Cerrar Sesion</a>
+          <a class="btn btn-warning " id="CerrarSesion" href="./../../pages/logOut.php?nombreSesion=email" >Cerrar Sesion</a>
         </ul>
     		<div class="tab-content" id="myTabContent">
     			<div class="tab-pane fade show active" id="graficas" role="tabpanel" aria-labelledby="graficas-tab">
             <div class="card">
               <div class="card-header">
                 <h4>Graficas</h4>
+                <a class="btn bg-warning text-light " href="http://localhost/postKarte_v4/pages/crearMPDF1.php" id="Reportes" >Reportes</a>
               </div>
               <div class="card-body justify-content-center">
                   <h4>Edad de los Usuarios</h4>

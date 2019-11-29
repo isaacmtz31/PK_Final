@@ -16,14 +16,23 @@
       if($infUsuario[0] == "USUARIO NO ENCONTRADO"){
         $respAX["val"] = 0;
         $respAX["msj"] = "Usuario no encontrado, favor de corroborar tus datos.";
-      }else{
-        $respAX["val"] = 1;
-        $respAX["msj"] = "Hola $infUsuario[1]. Bienvenido a PostKarte";
-        $_SESSION["email"] = $infUsuario[5];
+      }
+      else{
+        if($infUsuario[0] != "ADMIN NO ENCONTRADO" && $infUsuario[2] == $email)
+        {
+          $respAX["val"] = 2;
+          $respAX["msj"] = "Hola Jefe. Bienvenido a PostKarte";
+          $_SESSION["email"] = $infUsuario[2];
+        }else{
+          $respAX["val"] = 1;
+          $respAX["msj"] = "Hola $infUsuario[1]. Bienvenido a PostKarte";
+          $_SESSION["email"] = $infUsuario[5];
         }
-    }else{
-        $respAX["val"] = 1;
-        $respAX["msj"] = "Error. Favor de intentarlo nuevamente";
+      }
+    }
+    else {
+      $respAX["val"] = 0;
+      $respAX["msj"] = "Usuario no encontrado, favor de corroborar tus datos.";
     }
     echo json_encode($respAX);
 ?>

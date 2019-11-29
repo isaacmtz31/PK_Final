@@ -23,17 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
 function emplea () {
 var postales=document.getElementsByClassName('ir');
 const botones = document.querySelectorAll(".lol");
-var div = document.getElementById('form_envio'); 
+var div = document.getElementById('form_envio');
 var img = document.getElementById("atras");
 var divs = document.getElementById('paleta');
 var tip = document.getElementById('tip');
 var palet = document.getElementById('palet');
 var estado = document.getElementById('estado');
 var subir = document.getElementById('sube');
-var canv = document.getElementById("miCanvas"); 
+var canv = document.getElementById("miCanvas");
 const llama = function (evento) {
     var ruta = this.src;//encontramos la ruta de la postal que se haga click
-    img.src = ruta;//la asignamos a la imagen del espacio de trabajo 
+    img.src = ruta;//la asignamos a la imagen del espacio de trabajo
 }
 const muestra1 = function (evento){
        this.style.border = '4px solid #fff';
@@ -57,7 +57,7 @@ for (var i = 0; i < postales.length; i++) {//para todos los elementos en el carr
         palet.style.display = "none";
         estado.style.display = "none";
         subir.style.display = "none";
-   }); 
+   });
    var elems = document.querySelectorAll('.carousel');
    var instances = M.Carousel.init(elems, {
         indicators: true
@@ -108,8 +108,8 @@ document.getElementById('checa').addEventListener("change", function () {
         subir.style.display = "none";
 	}
 });
-//Revisa las condiciones si hubo dedicatoria de postal antes de enviar 
-document.getElementById('exPng').addEventListener("click", function (){
+//Revisa las condiciones si hubo dedicatoria de postal antes de enviar
+/*document.getElementById('exPng').addEventListener("click", function (){
     var descarga = document.getElementById('descarga');//opcion de descarga
     var box = document.getElementById('checa');
     var content = $("#emails").val();//obtenemos el valor del primer input
@@ -120,7 +120,7 @@ document.getElementById('exPng').addEventListener("click", function (){
     }else{
         descarga.style.display = "none";
     }
-});
+});*/
 
 document.getElementById('envio').addEventListener("submit", function (){
     var envia = document.getElementById("elsub");

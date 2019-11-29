@@ -9,8 +9,7 @@ $query = "SELECT * FROM categorias WHERE nombreCategoria='Paisajes'";
 if (isset($_POST['categorias'])) {// tendra que ser el nombre de la tabla a la que nos comunicaremos y es igual que la del ajax.js
 	//$q = utf8_encode($_POST['categorias']);
 	$q=$conexion->real_escape_string($_POST['categorias']);
-	$query = "SELECT * FROM categorias WHERE
-		nombreCategoria='".$q."'";
+	$query = "select papel.img as 'imagen' from papel, categorias, papelcategoria where papel.idPapel = papelcategoria.idPapel and categorias.idCategoria = papelcategoria.idCategoria and categorias.nombreCategoria = '$q'";
 }
 $img.=
 	'<div class="carousel">';//Esto se hace para poder usar materialize

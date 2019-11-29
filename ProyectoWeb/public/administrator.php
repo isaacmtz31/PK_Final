@@ -1,10 +1,9 @@
 <?php
 session_start();
-$varCorreo = $_SESSION['Correo'];
-$varAdministrador = $_SESSION['Administrador'];
-if(($varCorreo == null || $varCorreo == '') and ( $varAdministrador == null || $varAdministrador == '')){
+$varCorreo = $_SESSION['email'];
+if(($varCorreo == null || $varCorreo == '')){
   echo 'Usted no tiene Autorizacion';
-  header("Location:http://localhost:8080/ProyectoWeb/index.php");
+  header("Location:http://localhost/postKarte_v4/pages/logIn.php");
 }
  ?>
  <html lang="en">
@@ -60,7 +59,7 @@ if(($varCorreo == null || $varCorreo == '') and ( $varAdministrador == null || $
   <div class="container">
 		<div class="mx-auto col-xs-12 col-lg-12 main-section" id="myTab" role="tablist">
 			<ul class="nav nav-tabs justify-content-center">
-        <a class="btn bg-warning text-light " href="http://localhost:8080/ProyectoWeb/public/administradorReportes.php" id="Reportes" >Reportes</a>
+        <a class="btn bg-warning text-light " href="http://localhost/postKarte_v4/ProyectoWeb/public/administradorReportes.php" id="Reportes" >Reportes</a>
 
   			<li class="nav-item">
     			<a class="nav-link active text-secondary " id="user-tab" data-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="false">Usuarios</a>
@@ -83,7 +82,7 @@ if(($varCorreo == null || $varCorreo == '') and ( $varAdministrador == null || $
         <li class="nav-item">
     			<a class="nav-link text-secondary" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">Formulario</a>
         </li>
-        <a class="btn btn-warning " id="CerrarSesion" >Cerrar Sesion</a>
+        <a class="btn btn-warning " id="CerrarSesion" href="./../../pages/logOut.php?nombreSesion=email" >Cerrar Sesion</a>
       </ul>
   		<div class="tab-content" id="myTabContent">
   			<div class="tab-pane fade show active" id="user" role="tabpanel" aria-labelledby="user-tab">

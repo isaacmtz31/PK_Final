@@ -21,8 +21,8 @@
                 <img class='activator' src='$user_arr->Imagen'>
             </div>
             <div class='card-content'>
-              <span class='card-title activator grey-text text-darken-4'>" . $user_arr->Nombre . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id='ver' data-value='$user_arr->Nombre' class='fas fa-eye'></i></span>
-              <p><a id='pdfD' href='#'>Descargar como PDF</a></p>
+              <span id='ver' class='card-title activator grey-text text-darken-4'>" . $user_arr->Nombre . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i data-value='$user_arr->Nombre' class='fas fa-eye'></i></span>
+              <p id='pdfD'><a data-value='$user_arr->Nombre' href='#'>Descargar como PDF</a></p>
             </div>
             <div class='card-reveal'>
               <span class='card-title grey-text text-darken-4'>".$user_arr->Nombre."<i class='fas fa-times'></i></span>
@@ -55,8 +55,8 @@
               <img class='activator' src='$user_arr->Imagen'>
           </div>
           <div class='card-content'>
-            <span class='card-title activator grey-text text-darken-4'>" . $user_arr->Nombre . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id='env' data-value='$user_arr->Estatus' class='fas fa-eye'></i></span>
-            <p><a id='pdfD' href='#'>This is a link</a></p>
+            <span class='card-title activator grey-text text-darken-4'>" . $user_arr->Nombre . "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id='env' data-value='$user_arr->Nombre' class='fas fa-eye'></i></span>
+            <p><a id='pdfD' href='#' data-value='$user_arr->Nombre'>Descargar como pdf</a></p>
           </div>
           <div class='card-reveal'>
             <span class='card-title grey-text text-darken-4'>".$user_arr->Nombre."<i class='fas fa-times'></i></span>

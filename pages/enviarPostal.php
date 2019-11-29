@@ -105,11 +105,11 @@
                                  <li>
                                      <a href="#" class="NavLateral-DropDown  waves-effect waves-light"> <i class="fas fa-envelope"></i> PostKartes</a>
                                      <ul class="full-width">
-                                         <li><a href="button.jsp" class="waves-effect waves-light"><i class="fas fa-envelope-open"></i>Mis PostKartes</a></li>
+                                         <li><a href="./misPostales.php" class="waves-effect waves-light"><i class="fas fa-envelope-open"></i>Mis PostKartes</a></li>
                                          <li class="NavLateralDivider"></li>
                                          <li><a href="form.jsp" class="waves-effect waves-light"><i class="fas fa-paper-plane"></i>Enviar una postal</a></li>
                                          <li class="NavLateralDivider"></li>
-                                         <li><a href="form.jsp" class="waves-effect waves-light"><i class="fas fa-palette"></i>Diseña tu propia postal</a></li>
+                                         <li><a href="./../creaPK/postal.php" class="waves-effect waves-light"><i class="fas fa-palette"></i>Diseña tu propia postal</a></li>
                                      </ul>
                                  </li>
 

@@ -127,7 +127,7 @@ begin
 					IF(psw != '' ) then
 						IF(mail != '') then
 							IF(fotoP != '') then
-								insert into usuario(nombreUsuario,apellidoUsuario,genero,contra,email,edad,fotoPerfil) values(nombreU, apellidoU, gener, psw, mail, age, fotoP);
+								insert into usuario(nombreUsuario,apellidoUsuario,genero,contra,email,edad,fotoPerfil) values(nombreU, apellidoU, gener, psw, mail, age, concat("./../imgs/users/",fotoP));
 								set msj = 'Usuario agregado';
 							else
 								insert into usuario(nombreUsuario,apellidoUsuario,genero,contra,email,edad) values(nombreU, apellidoU, gener, psw, mail, age);
@@ -546,8 +546,19 @@ begin
     select msj as aviso;
 end **
 delimiter ;
-call cambiarEstadoPK('Navidad');
+call cambiarEstadoPK('Graduacion');
 select * from usuario;
-select * from karte;
-delete from karte where idKarte >= 1;
+select * from categorias;
+select papel.img as 'imagen' from papel, categorias, papelcategoria where papel.idPapel = papelcategoria.idPapel and categorias.idCategoria = papelcategoria.idCategoria and categorias.nombreCategoria = 'Amor';
+select * from papelcategoria;
+select * from karte where nombreK = 'Estudia';
+delete from karte where idKarte > 1;
 delete from relusuariokarte where idEnviados >= 1;
+
+select * from karte where nombreK = 'WinterPostal';
+select * from admini;
+select * from usuario;
+call postales.logIn('admin1@admin.com','1324');
+call postales.logIn('isaac31120@gmail.com','1234'); 
+select * from usuario;
+delete from usuario where idUsuario = 4;
